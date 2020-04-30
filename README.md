@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/malikperang/malik-chef-cookbook.svg?branch=master)](https://travis-ci.org/github/malikperang/malik-chef-cookbook)
+
 # Malik Chef Cookbooks for AWS OpsWorks
 
 This is my custom cookbook whilst working on Proof of Concept(POC) for following concepts:-
