@@ -1,9 +1,15 @@
 dist: bionic
 addons:
   apt:
-    update: true
+    sources:
+      - chef-current-xenial
     packages:
       - chef-workstation
+
+install: echo "skip bundle install"
+
+env:
+  - CHEF_LICENSE=accept
 
 branches:
   only:
@@ -11,8 +17,21 @@ branches:
 
 services: docker
 
-jobs:
-  include:
-    - env: INSTANCE=default-ubuntu-1804
+env:
+  matrix:
+  - INSTANCE=multi-instance-ubuntu-1804
+
+before_script:
+  - sudo iptables -L DOCKER || ( echo "DOCKER iptables chain missing" ; sudo iptables -N DOCKER )
+  - eval "$(chef shell-init bash)"
+  - chef --version
 
 script: KITCHEN_LOCAL_YAML=./api_app/kitchen.dokken.yml kitchen verify ${INSTANCE}
+
+matrix:
+  include:
+    - script:
+      - delivery local all
+      env:
+        - UNIT_AND_LINT=1
+        - CHEF_LICENSE=accept
