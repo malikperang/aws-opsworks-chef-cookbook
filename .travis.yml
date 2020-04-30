@@ -2,6 +2,8 @@ dist: bionic
 addons:
   apt:
     update: true
+    packages:
+      - chef-zero
 
 branches:
   only:
