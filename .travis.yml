@@ -3,7 +3,7 @@ addons:
   apt:
     update: true
     packages:
-      - chef-zero
+      - chef-workstation
 
 branches:
   only:
