@@ -26,7 +26,7 @@ before_script:
   - eval "$(chef shell-init bash)"
   - chef --version
 
-script: KITCHEN_LOCAL_YAML=./api_app/kitchen.dokken.yml kitchen verify ${INSTANCE}
+script: KITCHEN_YAML=./api_app/kitchen.dokken.yml kitchen verify ${INSTANCE}
 
 # matrix:
   # include:
