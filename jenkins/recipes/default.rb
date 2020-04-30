@@ -33,12 +33,13 @@ end
 
 service 'jenkins' do
     supports status: true, restart: true, reload: true
-    action [ :enable, :start ]
+    action [:restart]
 end
 
 #Allow Firewall for Jenkins port
 bash 'update_firewall' do
-    code <--EOH 
+    code <<-EOH 
         sudo ufw allow 8080
         sudo ufw status
     EOH
+end
