@@ -28,10 +28,10 @@ before_script:
 
 script: KITCHEN_LOCAL_YAML=./api_app/kitchen.dokken.yml kitchen verify ${INSTANCE}
 
-matrix:
-  include:
-    - script:
-      - delivery local all
-      env:
-        - UNIT_AND_LINT=1
-        - CHEF_LICENSE=accept
+# matrix:
+  # include:
+  #   - script:
+  #     - delivery local all
+  #     env:
+  #       - UNIT_AND_LINT=1
+  #       - CHEF_LICENSE=accept
