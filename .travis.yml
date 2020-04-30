@@ -1,7 +1,7 @@
 dist: bionic
 addons:
   apt:
-    packages: chef-zero
+    packages: chef-workstation
 
 branches:
   only: master
