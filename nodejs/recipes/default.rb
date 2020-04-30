@@ -4,7 +4,9 @@
 #
 # Copyright:: 2020, The Authors, All Rights Reserved.
 
-apt_update
+apt_update "all" do
+    action :update
+end
 
 apt_package 'curl' do
     action :install

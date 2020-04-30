@@ -1,0 +1,23 @@
+---
+driver:
+  name: dokken
+  chef_version: 12
+
+transport:
+  name: dokken
+
+provisioner:
+  name: dokken
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: ubuntu-18.04
+    driver:
+      image: dokken/ubuntu-18.04
+
+suites:
+  - name: default
+    run_list:
+      - recipe[api_app::default]

@@ -14,3 +14,4 @@ run_list 'jenkins::default'
 
 # Specify a custom source for a single cookbook:
 cookbook 'jenkins', path: '.'
+cookbook 'ufw', '~> 3.2.1', :supermarket

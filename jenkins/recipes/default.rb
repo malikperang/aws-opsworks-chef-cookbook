@@ -2,10 +2,13 @@
 # Cookbook:: jenkins
 # Recipe:: default
 #
-# Copyright:: 2020, The Authors, All Rights Reserved.
+# Copyright:: 2020, Malik Perang All Rights Reserved.
 
 #Install Java
-apt_update
+apt_update "all" do
+    action :update
+end
+
 apt_package "#{node['java_version']}" do
     action :install
 end

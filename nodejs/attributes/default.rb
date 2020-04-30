@@ -1,9 +1,8 @@
 
-#
-# Cookbook Name:: aws-ha-simulation-cookbook
+# Cookbook Name:: 
 # Attribute:: default
 #
-# Copyright (c) 2016 BlueNinja, All Rights Reserved.
+# Copyright (c) 2020 Malik Perang
 # 
 # You can change the PPA installation setting here
 

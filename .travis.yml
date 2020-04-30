@@ -1,0 +1,11 @@
+dist: bionic
+addons:
+  apt:
+    packages: chef-zero
+
+branches:
+  only: master
+
+services: docker
+
+script: KITCHEN_LOCAL_YAML=./api_app/kitchen.dokken.yml kitchen verify

@@ -3,4 +3,4 @@
 .delivery/
 .*/.kitchen
 .*/.delivery
-.*/.Policyfile.lock.json
+.*/.Policyfile.lock.json.kitchen.local.yml
