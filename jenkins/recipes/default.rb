@@ -33,7 +33,7 @@ end
 
 service 'jenkins' do
     supports status: true, restart: true, reload: true
-    action [:restart]
+    action :nothing
 end
 
 #Allow Firewall for Jenkins port
