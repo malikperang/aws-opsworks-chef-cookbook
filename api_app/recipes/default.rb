@@ -7,7 +7,9 @@
 include_recipe "nodejs"
 include_recipe "jenkins"
 
-apt_update
+apt_update "all" do
+    action :update
+end
 
 # bash 'install_pm2' do
 #     code <<-EOH

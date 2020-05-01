@@ -23,3 +23,4 @@ chef_version '>= 12.0'
 end
 
 depends 'nodejs'
+depends 'jenkins'
