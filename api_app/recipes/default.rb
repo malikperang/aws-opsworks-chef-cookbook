@@ -4,8 +4,8 @@
 #
 # Copyright:: 2020, The Authors, All Rights Reserved.
 
-include_recipe "nodejs"
-include_recipe "jenkins"
+# include_recipe "nodejs"
+# include_recipe "jenkins"
 
 apt_update "all" do
     action :update
