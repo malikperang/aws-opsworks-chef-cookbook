@@ -1,3 +1,6 @@
 [submodule "nginx"]
 	path = nginx
 url=https://github.com/sous-chefs/nginx.git
+[submodule "build-essential"]
+	path = build-essential
+	url = https://github.com/chef-boneyard/build-essential
