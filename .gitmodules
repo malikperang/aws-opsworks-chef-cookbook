@@ -22,3 +22,6 @@ url=https://github.com/sous-chefs/nginx.git
 [submodule "windows"]
 	path = windows
 	url = https://github.com/chef-cookbooks/windows.git
+[submodule "compat_resource"]
+	path = compat_resource
+	url = https://github.com/chef-boneyard/compat_resource.git
