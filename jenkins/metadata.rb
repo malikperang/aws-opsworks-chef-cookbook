@@ -17,3 +17,5 @@ chef_version '>= 12.0'
 # a Supermarket.
 #
 # source_url 'https://github.com/<insert_org_here>/jenkins'
+
+depends 'nginx'
