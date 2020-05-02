@@ -18,4 +18,4 @@ chef_version '>= 12.0'
 #
 # source_url 'https://github.com/<insert_org_here>/jenkins'
 
-depends 'nginx','= 2.0.2'
+depends 'nginx'

@@ -1,7 +1,7 @@
 source 'https://supermarket.chef.io'
 
 cookbook 'ufw', '~> 3.2.1', :supermarket
-cookbook 'nginx', '= 8.1.6', :supermarket
+cookbook 'nginx', '= 8.1.6'
 cookbook 'seven_zip', '= 2.0.2', :supermarket
 
 metadata
