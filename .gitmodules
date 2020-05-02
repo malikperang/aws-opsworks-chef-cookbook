@@ -13,3 +13,12 @@ url=https://github.com/sous-chefs/nginx.git
 [submodule "ohai"]
 	path = ohai
 	url = https://github.com/chef-cookbooks/ohai.git
+[submodule "seven_zip"]
+	path = seven_zip
+	url = https://github.com/windowschefcookbooks/seven_zip.git
+[submodule "mingw"]
+	path = mingw
+	url = https://github.com/chef-cookbooks/mingw.git
+[submodule "windows"]
+	path = windows
+	url = https://github.com/chef-cookbooks/windows.git
