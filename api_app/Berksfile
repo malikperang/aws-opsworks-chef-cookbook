@@ -2,5 +2,6 @@ source 'https://supermarket.chef.io'
 
 cookbook 'nodejs',path: '../nodejs'
 cookbook 'jenkins',path: '../jenkins'
+cookbook 'build-essentials',path: '../build-essentials'
 
 metadata

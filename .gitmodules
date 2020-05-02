@@ -4,3 +4,12 @@ url=https://github.com/sous-chefs/nginx.git
 [submodule "build-essential"]
 	path = build-essential
 	url = https://github.com/chef-boneyard/build-essential
+[submodule "yum-epel"]
+	path = yum-epel
+	url = https://github.com/chef-cookbooks/yum-epel.git
+[submodule "zypper"]
+	path = zypper
+	url = https://github.com/jarosser06/chef-zypper.git
+[submodule "ohai"]
+	path = ohai
+	url = https://github.com/chef-cookbooks/ohai.git
